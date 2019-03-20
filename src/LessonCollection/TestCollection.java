@@ -6,7 +6,7 @@ import java.util.List;
 
 public class TestCollection {
     public static void main(String[] args) {
-        test03();
+        test02();
     }
     /**
      * 测试Collection接口中的方法
