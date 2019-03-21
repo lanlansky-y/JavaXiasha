@@ -15,32 +15,32 @@ public class TestMapJavabean {
         User user4 = new User(1004, "赵六", 8000, "2021.1.30");
 
         //Map
-        Map<Integer,User> map = new HashMap<>();
+        Map<Integer, User> map = new HashMap<>();
         map.put(1, user1);
         map.put(2, user2);
         map.put(3, user3);
         map.put(4, user4);
         Set<Integer> keySet = map.keySet();
-        for(Integer key:keySet){
-            System.out.println(key+"-"+map.get(key));
+        for (Integer key : keySet) {
+            System.out.println(key + "-" + map.get(key));
         }
 
         System.out.println("**********");
 
         //List
-        List<User> list=new ArrayList<>();
+        List<User> list = new ArrayList<>();
         list.add(user1);
         list.add(user2);
         list.add(user3);
         list.add(user4);
         System.out.println(list);
-        for(User user:list){
+        for (User user : list) {
             System.out.println(user);
         }
     }
 }
 
-class User{
+class User {
 
     private int id;
     private String name;
@@ -91,6 +91,6 @@ class User{
 
     @Override
     public String toString() {
-        return "id："+this.id+"，姓名："+this.name+"，薪水："+this.salary+"，入职日期："+this.hireDate;
+        return "id：" + this.id + "，姓名：" + this.name + "，薪水：" + this.salary + "，入职日期：" + this.hireDate;
     }
 }

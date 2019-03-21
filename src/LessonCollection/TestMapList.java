@@ -41,10 +41,10 @@ public class TestMapList {
 
         System.out.println(list);
 
-        for (Map<String, Object> map:list) {
+        for (Map<String, Object> map : list) {
             Set<String> keySet = map.keySet();
-            for (String key:keySet) {
-                System.out.print(key+":"+map.get(key)+",");
+            for (String key : keySet) {
+                System.out.print(key + ":" + map.get(key) + ",");
             }
             System.out.println();
         }
