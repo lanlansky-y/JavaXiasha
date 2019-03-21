@@ -6,7 +6,7 @@ import java.util.List;
 
 public class TestCollection {
     public static void main(String[] args) {
-        test02();
+        test03();
     }
     /**
      * 测试Collection接口中的方法
@@ -85,5 +85,9 @@ public class TestCollection {
         System.out.println(list.get(1));
         System.out.println(list.indexOf("A"));
         System.out.println(list.lastIndexOf("A"));
+
+        for (int i = 0; i < list.size(); i++) {
+            System.out.print(list.get(i)+" ");
+        }
     }
 }
